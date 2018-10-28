@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7414838421854687004296AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414838321854687004296AE /* AppDelegate.swift */; };
-		7414838621854687004296AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414838521854687004296AE /* ViewController.swift */; };
-		7414838921854687004296AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7414838721854687004296AE /* Main.storyboard */; };
 		7414838B21854689004296AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7414838A21854689004296AE /* Assets.xcassets */; };
 		7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7414838C21854689004296AE /* LaunchScreen.storyboard */; };
 		7414839921854689004296AE /* MapNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414839821854689004296AE /* MapNavigatorTests.swift */; };
+		744F53E521854E86006DB829 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E421854E86006DB829 /* MainCoordinator.swift */; };
+		744F53E721854FD0006DB829 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E621854FD0006DB829 /* InitialScreenViewController.swift */; };
+		744F53E921855457006DB829 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E821855457006DB829 /* RootController.swift */; };
+		744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */; };
+		744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744F53EE21855838006DB829 /* InitialScreenViewController.xib */; };
 		74A3F8491CF35D4C7CC9FE0B /* libPods-MapNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A222C5E949319421C63D1190 /* libPods-MapNavigator.a */; };
 /* End PBXBuildFile section */
 
@@ -30,14 +33,17 @@
 		573A6B81356B90102350239B /* Pods-MapNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		7414838021854687004296AE /* MapNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414838321854687004296AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7414838521854687004296AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7414838821854687004296AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7414838A21854689004296AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7414838D21854689004296AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7414838F21854689004296AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7414839421854689004296AE /* MapNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414839821854689004296AE /* MapNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigatorTests.swift; sourceTree = "<group>"; };
 		7414839A21854689004296AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744F53E421854E86006DB829 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		744F53E621854FD0006DB829 /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
+		744F53E821855457006DB829 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MapNavigator.swift"; sourceTree = "<group>"; };
+		744F53EE21855838006DB829 /* InitialScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialScreenViewController.xib; sourceTree = "<group>"; };
 		A222C5E949319421C63D1190 /* libPods-MapNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,10 +99,12 @@
 		7414838221854687004296AE /* MapNavigator */ = {
 			isa = PBXGroup;
 			children = (
-				7414838321854687004296AE /* AppDelegate.swift */,
-				7414838521854687004296AE /* ViewController.swift */,
-				7414838721854687004296AE /* Main.storyboard */,
+				744F53EB2185553B006DB829 /* Extensions */,
+				744F53E321854E71006DB829 /* Base */,
+				744F53E621854FD0006DB829 /* InitialScreenViewController.swift */,
+				744F53EE21855838006DB829 /* InitialScreenViewController.xib */,
 				7414838A21854689004296AE /* Assets.xcassets */,
+				7414838321854687004296AE /* AppDelegate.swift */,
 				7414838C21854689004296AE /* LaunchScreen.storyboard */,
 				7414838F21854689004296AE /* Info.plist */,
 			);
@@ -110,6 +118,23 @@
 				7414839A21854689004296AE /* Info.plist */,
 			);
 			path = MapNavigatorTests;
+			sourceTree = "<group>";
+		};
+		744F53E321854E71006DB829 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				744F53E421854E86006DB829 /* MainCoordinator.swift */,
+				744F53E821855457006DB829 /* RootController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		744F53EB2185553B006DB829 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E6CFD17A6E6B8010FCFF7D41 /* Frameworks */ = {
@@ -205,8 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */,
+				744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */,
 				7414838B21854689004296AE /* Assets.xcassets in Resources */,
-				7414838921854687004296AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7414838621854687004296AE /* ViewController.swift in Sources */,
+				744F53E921855457006DB829 /* RootController.swift in Sources */,
+				744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */,
+				744F53E521854E86006DB829 /* MainCoordinator.swift in Sources */,
 				7414838421854687004296AE /* AppDelegate.swift in Sources */,
+				744F53E721854FD0006DB829 /* InitialScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +330,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7414838721854687004296AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7414838821854687004296AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7414838C21854689004296AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,7 +465,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -461,7 +484,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -477,7 +503,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -494,7 +524,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

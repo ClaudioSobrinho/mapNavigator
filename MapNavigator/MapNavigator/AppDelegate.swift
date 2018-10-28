@@ -7,16 +7,35 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var coordinator: MainCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        initializeGoogleMaps()
+        initializeCoordinator()
         return true
+    }
+    
+    func initializeGoogleMaps() {
+        GMSServices.provideAPIKey("AIzaSyARsfpV8MifWY3W-1uAumWBpCWSelrz1-Y")
+        //GMSPlacesClient.provideAPIKey("AIzaSyARsfpV8MifWY3W-1uAumWBpCWSelrz1-Y")
+    }
+    
+    func initializeCoordinator() {
+        let rootController = RootController()
+        coordinator = MainCoordinator(rootController: rootController)
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = rootController
+        window?.makeKeyAndVisible()
+        
+        coordinator?.start()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
