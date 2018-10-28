@@ -13,6 +13,7 @@
 		7414838B21854689004296AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7414838A21854689004296AE /* Assets.xcassets */; };
 		7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7414838C21854689004296AE /* LaunchScreen.storyboard */; };
 		7414839921854689004296AE /* MapNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414839821854689004296AE /* MapNavigatorTests.swift */; };
+		74A3F8491CF35D4C7CC9FE0B /* libPods-MapNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A222C5E949319421C63D1190 /* libPods-MapNavigator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		573A6B81356B90102350239B /* Pods-MapNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.release.xcconfig"; sourceTree = "<group>"; };
 		7414838021854687004296AE /* MapNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414838321854687004296AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7414838521854687004296AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +38,8 @@
 		7414839421854689004296AE /* MapNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414839821854689004296AE /* MapNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigatorTests.swift; sourceTree = "<group>"; };
 		7414839A21854689004296AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A222C5E949319421C63D1190 /* libPods-MapNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A3F8491CF35D4C7CC9FE0B /* libPods-MapNavigator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		554BFE6749B8B970175070A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */,
+				573A6B81356B90102350239B /* Pods-MapNavigator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7414837721854687004296AE = {
 			isa = PBXGroup;
 			children = (
 				7414838221854687004296AE /* MapNavigator */,
 				7414839721854689004296AE /* MapNavigatorTests */,
 				7414838121854687004296AE /* Products */,
+				554BFE6749B8B970175070A7 /* Pods */,
+				E6CFD17A6E6B8010FCFF7D41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +112,14 @@
 			path = MapNavigatorTests;
 			sourceTree = "<group>";
 		};
+		E6CFD17A6E6B8010FCFF7D41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A222C5E949319421C63D1190 /* libPods-MapNavigator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +127,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7414839D21854689004296AE /* Build configuration list for PBXNativeTarget "MapNavigator" */;
 			buildPhases = (
+				7A968E2A63CF702294328A99 /* [CP] Check Pods Manifest.lock */,
 				7414837C21854687004296AE /* Sources */,
 				7414837D21854687004296AE /* Frameworks */,
 				7414837E21854687004296AE /* Resources */,
+				4CFB237C5636457B89E9D76B /* [CP] Embed Pods Frameworks */,
+				96226AF789EFFB883763BFF8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CFB237C5636457B89E9D76B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A968E2A63CF702294328A99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MapNavigator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96226AF789EFFB883763BFF8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7414837C21854687004296AE /* Sources */ = {
@@ -358,15 +439,13 @@
 		};
 		7414839E21854689004296AE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -376,15 +455,13 @@
 		};
 		7414839F21854689004296AE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 573A6B81356B90102350239B /* Pods-MapNavigator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -400,11 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -421,11 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
