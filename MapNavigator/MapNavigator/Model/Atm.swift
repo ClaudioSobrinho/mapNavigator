@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import CoreLocation
 
-class Atm: Codable {
+struct Atm: Codable {
     let address: Address?
     let openingHours: OpeningHours?
     let ratings: Ratings?
@@ -20,4 +21,19 @@ class Atm: Codable {
     let name: String?
     let sonectId: String?
     let tagline: String?
+    
+    var location: CLLocation? {
+        guard let latitude = self.latitude, let longitude = self.longitude else {
+            return nil
+        }
+        return CLLocation(latitude: CLLocationDegrees(latitude.doubleValue), longitude: CLLocationDegrees(longitude.doubleValue))
+    }
+    
+    //Mark: Functions
+    func distance(to location: CLLocation) -> CLLocationDistance {
+        guard let location = self.location else {
+            return 0
+        }
+        return location.distance(from: location)
+    }
 }
