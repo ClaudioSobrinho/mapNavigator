@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  MapNavigator
+
+  Created by Claudio Sobrinho on 29/10/2018.
+  Copyright © 2018 Claudio Sobrinho. All rights reserved.
+*/
+
+/* Atm List */
+"title" = "ATM's";
+

@@ -8,12 +8,15 @@
 
 import UIKit
 import GoogleMaps
+import CoreLocation
 
 class InitialScreenViewController: UIViewController {
     
     //    MARK: Properties
     private let viewModel = InitialScreenViewModel()
+    private let locationManager = CLLocationManager()
     
+    // MARK: LifeCycle
     override func loadView() {
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
@@ -32,6 +35,56 @@ class InitialScreenViewController: UIViewController {
         plotAtms(to: mapView)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configLocationManager()
+        self.viewModel.sortATMsListByDistance(to: CLLocation(latitude: 47.362962, longitude: 8.549960))
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        addListButton()
+    }
+    
+    // MARK: Configs
+    func configLocationManager() {
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
+    }
+    
+    // MARK: Actions
+    @objc func didTouchListButton() {
+        goToAtmList()
+    }
+    
+    private func goToAtmList(){
+        let navigationController = UINavigationController(rootViewController: AtmListViewController(viewModel: viewModel))
+        present(navigationController, animated: true, completion: nil)
+    }
+    
+    
+    // MARK: Appearence
+    private func addListButton() {
+        let listButton = UIButton()
+        listButton.frame.size = CGSize(width: 50, height: 50)
+        listButton.center = CGPoint(x: view.center.x, y: view.height - 100)
+        listButton.setImage(UIImage(named: "iconListButton"), for: .normal)
+        
+        listButton.addTarget(self, action: #selector(didTouchListButton), for: .touchUpInside)
+        
+        view.addSubview(listButton)
+    }
+    
+    // MARK: Functions
     private func plotAtms(to map: GMSMapView) {
         viewModel.getATMsList(completion: {atmList in
             for atm in atmList {
@@ -51,5 +104,16 @@ class InitialScreenViewController: UIViewController {
         marker.snippet = atm.tagline
         
         return marker
+    }
+}
+
+// MARK: CLLocationManagerDelegate
+extension InitialScreenViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        //guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        guard let location = locations.last else { return }
+        self.viewModel.sortATMsListByDistance(to: location)
+        self.locationManager.stopUpdatingLocation()
+        //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 }
