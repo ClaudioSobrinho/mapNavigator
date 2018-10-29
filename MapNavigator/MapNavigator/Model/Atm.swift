@@ -31,9 +31,9 @@ struct Atm: Codable {
     
     //Mark: Functions
     func distance(to location: CLLocation) -> CLLocationDistance {
-        guard let location = self.location else {
+        guard let atmLocation = self.location else {
             return 0
         }
-        return location.distance(from: location)
+        return atmLocation.distance(from: location)
     }
 }

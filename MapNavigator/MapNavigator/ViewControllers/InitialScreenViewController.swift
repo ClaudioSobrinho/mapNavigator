@@ -15,21 +15,19 @@ class InitialScreenViewController: UIViewController {
     //    MARK: Properties
     private let viewModel = InitialScreenViewModel()
     private let locationManager = CLLocationManager()
+    private let defaultLocation = CLLocation(latitude: 47.362962, longitude: 8.549960)
     
     // MARK: LifeCycle
     override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
         let camera = GMSCameraPosition.camera(withLatitude: 47.362962, longitude: 8.549960, zoom: 18.0)
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         view = mapView
         
-        // Creates a marker in the center of the map.
         let marker = GMSMarker()
         marker.icon = UIImage(named: "iconUserLocation")
         marker.position = CLLocationCoordinate2D(latitude: 47.362962, longitude: 8.549960)
         marker.title = "User"
-        marker.snippet = "My Location"
+        marker.snippet = "Fake Location"
         marker.map = mapView
         
         plotAtms(to: mapView)
@@ -38,7 +36,6 @@ class InitialScreenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configLocationManager()
-        self.viewModel.sortATMsListByDistance(to: CLLocation(latitude: 47.362962, longitude: 8.549960))
     }
     
     override func viewWillLayoutSubviews() {
@@ -89,19 +86,19 @@ class InitialScreenViewController: UIViewController {
         viewModel.getATMsList(completion: {atmList in
             for atm in atmList {
                 DispatchQueue.main.async {
-                    self.makeMarker(for: atm).map = map
+                    self.makeMarker(for: atm, with: atm.distance(to: self.defaultLocation).rounded()).map = map
                 }
             }
         })
     }
     
-    private func makeMarker(for atm: Atm) -> GMSMarker {
+    private func makeMarker(for atm: Atm, with distance: Double) -> GMSMarker {
         guard let latitude = atm.latitude, let longitude = atm.longitude else { return GMSMarker()}
         let marker = GMSMarker()
         marker.icon = UIImage(named: "iconLocationMarker")
         marker.position = CLLocationCoordinate2D(latitude: CLLocationDegrees(latitude.doubleValue), longitude: CLLocationDegrees(longitude.doubleValue))
         marker.title = atm.name
-        marker.snippet = atm.tagline
+        marker.snippet = "Distance: \(distance)m"
         
         return marker
     }
@@ -110,10 +107,8 @@ class InitialScreenViewController: UIViewController {
 // MARK: CLLocationManagerDelegate
 extension InitialScreenViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        //guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         guard let location = locations.last else { return }
         self.viewModel.sortATMsListByDistance(to: location)
         self.locationManager.stopUpdatingLocation()
-        //print("locations = \(locValue.latitude) \(locValue.longitude)")
     }
 }

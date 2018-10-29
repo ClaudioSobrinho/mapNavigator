@@ -26,6 +26,7 @@ class InitialScreenViewModel {
     func sortATMsListByDistance(to myLocation: CLLocation) {
         lastLocation = myLocation
         atmList.sort(by: { $0.distance(to: myLocation).rounded() < $1.distance(to: myLocation).rounded() })
+        
     }
     
     func numberOfItems() -> Int {
@@ -35,7 +36,7 @@ class InitialScreenViewModel {
     func cellViewModel(for index: Int) -> AtmListCellViewModel{
         let atm = atmList[index]
         
-        let vm = AtmListCellViewModel(cellColor: nil, atmImage: nil, topLabelText: atm.name, bottomLabelText: atm.tagline, rightLabelText: "\(String(describing: atm.location!.distance(from: lastLocation).rounded()))m")
+        let vm = AtmListCellViewModel(cellColor: nil, atmImage: nil, topLabelText: atm.name, bottomLabelText: atm.tagline, rightLabelText: "\(String(describing: atm.distance(to: lastLocation).rounded()))m")
         
         return vm
     }
