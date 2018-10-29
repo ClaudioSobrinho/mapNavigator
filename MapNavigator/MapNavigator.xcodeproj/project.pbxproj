@@ -16,6 +16,14 @@
 		744F53E921855457006DB829 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E821855457006DB829 /* RootController.swift */; };
 		744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */; };
 		744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744F53EE21855838006DB829 /* InitialScreenViewController.xib */; };
+		744F53F521867D6A006DB829 /* ATM_20181005_DEV.json in Resources */ = {isa = PBXBuildFile; fileRef = 744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */; };
+		744F53F72186815E006DB829 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53F62186815E006DB829 /* Services.swift */; };
+		744F53FB218684E1006DB829 /* Atm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FA218684E1006DB829 /* Atm.swift */; };
+		744F53FD2186863E006DB829 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FC2186863E006DB829 /* Address.swift */; };
+		744F53FF218688E4006DB829 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FE218688E4006DB829 /* OpeningHours.swift */; };
+		744F540121868B93006DB829 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540021868B93006DB829 /* Ratings.swift */; };
+		744F540321868E6F006DB829 /* InitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540221868E6F006DB829 /* InitialScreenViewModel.swift */; };
+		744F540521869AA0006DB829 /* String+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540421869AA0006DB829 /* String+MapNavigator.swift */; };
 		74A3F8491CF35D4C7CC9FE0B /* libPods-MapNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A222C5E949319421C63D1190 /* libPods-MapNavigator.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +52,14 @@
 		744F53E821855457006DB829 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MapNavigator.swift"; sourceTree = "<group>"; };
 		744F53EE21855838006DB829 /* InitialScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialScreenViewController.xib; sourceTree = "<group>"; };
+		744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ATM_20181005_DEV.json; sourceTree = "<group>"; };
+		744F53F62186815E006DB829 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		744F53FA218684E1006DB829 /* Atm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atm.swift; sourceTree = "<group>"; };
+		744F53FC2186863E006DB829 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		744F53FE218688E4006DB829 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		744F540021868B93006DB829 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		744F540221868E6F006DB829 /* InitialScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModel.swift; sourceTree = "<group>"; };
+		744F540421869AA0006DB829 /* String+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MapNavigator.swift"; sourceTree = "<group>"; };
 		A222C5E949319421C63D1190 /* libPods-MapNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,9 +117,10 @@
 			children = (
 				744F53EB2185553B006DB829 /* Extensions */,
 				744F53E321854E71006DB829 /* Base */,
-				744F53E621854FD0006DB829 /* InitialScreenViewController.swift */,
-				744F53EE21855838006DB829 /* InitialScreenViewController.xib */,
-				7414838A21854689004296AE /* Assets.xcassets */,
+				744F53F121856888006DB829 /* Model */,
+				744F53F22185689A006DB829 /* ViewModels */,
+				744F53F021856869006DB829 /* ViewControllers */,
+				744F53F321867D4C006DB829 /* Resources */,
 				7414838321854687004296AE /* AppDelegate.swift */,
 				7414838C21854689004296AE /* LaunchScreen.storyboard */,
 				7414838F21854689004296AE /* Info.plist */,
@@ -125,6 +142,7 @@
 			children = (
 				744F53E421854E86006DB829 /* MainCoordinator.swift */,
 				744F53E821855457006DB829 /* RootController.swift */,
+				744F53F62186815E006DB829 /* Services.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -133,8 +151,46 @@
 			isa = PBXGroup;
 			children = (
 				744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */,
+				744F540421869AA0006DB829 /* String+MapNavigator.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		744F53F021856869006DB829 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				744F53E621854FD0006DB829 /* InitialScreenViewController.swift */,
+				744F53EE21855838006DB829 /* InitialScreenViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		744F53F121856888006DB829 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				744F53FA218684E1006DB829 /* Atm.swift */,
+				744F53FC2186863E006DB829 /* Address.swift */,
+				744F53FE218688E4006DB829 /* OpeningHours.swift */,
+				744F540021868B93006DB829 /* Ratings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		744F53F22185689A006DB829 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				744F540221868E6F006DB829 /* InitialScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		744F53F321867D4C006DB829 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */,
+				7414838A21854689004296AE /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E6CFD17A6E6B8010FCFF7D41 /* Frameworks */ = {
@@ -230,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */,
+				744F53F521867D6A006DB829 /* ATM_20181005_DEV.json in Resources */,
 				744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */,
 				7414838B21854689004296AE /* Assets.xcassets in Resources */,
 			);
@@ -303,11 +360,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				744F53FD2186863E006DB829 /* Address.swift in Sources */,
 				744F53E921855457006DB829 /* RootController.swift in Sources */,
+				744F53F72186815E006DB829 /* Services.swift in Sources */,
 				744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */,
+				744F540521869AA0006DB829 /* String+MapNavigator.swift in Sources */,
 				744F53E521854E86006DB829 /* MainCoordinator.swift in Sources */,
 				7414838421854687004296AE /* AppDelegate.swift in Sources */,
+				744F540121868B93006DB829 /* Ratings.swift in Sources */,
 				744F53E721854FD0006DB829 /* InitialScreenViewController.swift in Sources */,
+				744F53FB218684E1006DB829 /* Atm.swift in Sources */,
+				744F540321868E6F006DB829 /* InitialScreenViewModel.swift in Sources */,
+				744F53FF218688E4006DB829 /* OpeningHours.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
