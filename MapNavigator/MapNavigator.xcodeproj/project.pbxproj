@@ -7,12 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6919579821876ABB00DED1D2 /* AtmListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6919579721876ABB00DED1D2 /* AtmListViewController.swift */; };
+		6919579A21876AC900DED1D2 /* AtmListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6919579921876AC900DED1D2 /* AtmListViewController.xib */; };
+		6919579C2187743A00DED1D2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6919579B2187743A00DED1D2 /* Localizable.strings */; };
+		6919579E2187749500DED1D2 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6919579D2187749500DED1D2 /* Localizable.swift */; };
+		691957A12187797700DED1D2 /* AtmListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691957A02187797700DED1D2 /* AtmListCell.swift */; };
+		691957A32187798200DED1D2 /* AtmListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 691957A22187798200DED1D2 /* AtmListCell.xib */; };
+		691957A521877CAA00DED1D2 /* AtmListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691957A421877CAA00DED1D2 /* AtmListCellViewModel.swift */; };
+		691957A72187807900DED1D2 /* UITableView+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691957A62187807900DED1D2 /* UITableView+MapNavigator.swift */; };
 		7414838421854687004296AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414838321854687004296AE /* AppDelegate.swift */; };
-		7414838621854687004296AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414838521854687004296AE /* ViewController.swift */; };
-		7414838921854687004296AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7414838721854687004296AE /* Main.storyboard */; };
 		7414838B21854689004296AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7414838A21854689004296AE /* Assets.xcassets */; };
 		7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7414838C21854689004296AE /* LaunchScreen.storyboard */; };
 		7414839921854689004296AE /* MapNavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7414839821854689004296AE /* MapNavigatorTests.swift */; };
+		744F53E521854E86006DB829 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E421854E86006DB829 /* MainCoordinator.swift */; };
+		744F53E721854FD0006DB829 /* InitialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E621854FD0006DB829 /* InitialScreenViewController.swift */; };
+		744F53E921855457006DB829 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53E821855457006DB829 /* RootController.swift */; };
+		744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */; };
+		744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 744F53EE21855838006DB829 /* InitialScreenViewController.xib */; };
+		744F53F521867D6A006DB829 /* ATM_20181005_DEV.json in Resources */ = {isa = PBXBuildFile; fileRef = 744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */; };
+		744F53F72186815E006DB829 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53F62186815E006DB829 /* Services.swift */; };
+		744F53FB218684E1006DB829 /* Atm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FA218684E1006DB829 /* Atm.swift */; };
+		744F53FD2186863E006DB829 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FC2186863E006DB829 /* Address.swift */; };
+		744F53FF218688E4006DB829 /* OpeningHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F53FE218688E4006DB829 /* OpeningHours.swift */; };
+		744F540121868B93006DB829 /* Ratings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540021868B93006DB829 /* Ratings.swift */; };
+		744F540321868E6F006DB829 /* InitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540221868E6F006DB829 /* InitialScreenViewModel.swift */; };
+		744F540521869AA0006DB829 /* String+MapNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744F540421869AA0006DB829 /* String+MapNavigator.swift */; };
 		74A3F8491CF35D4C7CC9FE0B /* libPods-MapNavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A222C5E949319421C63D1190 /* libPods-MapNavigator.a */; };
 /* End PBXBuildFile section */
 
@@ -28,16 +47,35 @@
 
 /* Begin PBXFileReference section */
 		573A6B81356B90102350239B /* Pods-MapNavigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.release.xcconfig"; sourceTree = "<group>"; };
+		6919579721876ABB00DED1D2 /* AtmListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmListViewController.swift; sourceTree = "<group>"; };
+		6919579921876AC900DED1D2 /* AtmListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtmListViewController.xib; sourceTree = "<group>"; };
+		6919579B2187743A00DED1D2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		6919579D2187749500DED1D2 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		691957A02187797700DED1D2 /* AtmListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmListCell.swift; sourceTree = "<group>"; };
+		691957A22187798200DED1D2 /* AtmListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AtmListCell.xib; sourceTree = "<group>"; };
+		691957A421877CAA00DED1D2 /* AtmListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmListCellViewModel.swift; sourceTree = "<group>"; };
+		691957A62187807900DED1D2 /* UITableView+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+MapNavigator.swift"; sourceTree = "<group>"; };
 		7414838021854687004296AE /* MapNavigator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapNavigator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414838321854687004296AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7414838521854687004296AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7414838821854687004296AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7414838A21854689004296AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7414838D21854689004296AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7414838F21854689004296AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7414839421854689004296AE /* MapNavigatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapNavigatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7414839821854689004296AE /* MapNavigatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapNavigatorTests.swift; sourceTree = "<group>"; };
 		7414839A21854689004296AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		744F53E421854E86006DB829 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		744F53E621854FD0006DB829 /* InitialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewController.swift; sourceTree = "<group>"; };
+		744F53E821855457006DB829 /* RootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+MapNavigator.swift"; sourceTree = "<group>"; };
+		744F53EE21855838006DB829 /* InitialScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialScreenViewController.xib; sourceTree = "<group>"; };
+		744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ATM_20181005_DEV.json; sourceTree = "<group>"; };
+		744F53F62186815E006DB829 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		744F53FA218684E1006DB829 /* Atm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atm.swift; sourceTree = "<group>"; };
+		744F53FC2186863E006DB829 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		744F53FE218688E4006DB829 /* OpeningHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningHours.swift; sourceTree = "<group>"; };
+		744F540021868B93006DB829 /* Ratings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ratings.swift; sourceTree = "<group>"; };
+		744F540221868E6F006DB829 /* InitialScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreenViewModel.swift; sourceTree = "<group>"; };
+		744F540421869AA0006DB829 /* String+MapNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MapNavigator.swift"; sourceTree = "<group>"; };
 		A222C5E949319421C63D1190 /* libPods-MapNavigator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapNavigator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04E323989F0B932653BB04F /* Pods-MapNavigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapNavigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapNavigator/Pods-MapNavigator.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +108,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6919579F2187794000DED1D2 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				691957A02187797700DED1D2 /* AtmListCell.swift */,
+				691957A22187798200DED1D2 /* AtmListCell.xib */,
+				691957A421877CAA00DED1D2 /* AtmListCellViewModel.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
 		7414837721854687004296AE = {
 			isa = PBXGroup;
 			children = (
@@ -93,10 +141,14 @@
 		7414838221854687004296AE /* MapNavigator */ = {
 			isa = PBXGroup;
 			children = (
+				744F53EB2185553B006DB829 /* Extensions */,
+				744F53E321854E71006DB829 /* Base */,
+				6919579F2187794000DED1D2 /* UIComponents */,
+				744F53F121856888006DB829 /* Model */,
+				744F53F22185689A006DB829 /* ViewModels */,
+				744F53F021856869006DB829 /* ViewControllers */,
+				744F53F321867D4C006DB829 /* Resources */,
 				7414838321854687004296AE /* AppDelegate.swift */,
-				7414838521854687004296AE /* ViewController.swift */,
-				7414838721854687004296AE /* Main.storyboard */,
-				7414838A21854689004296AE /* Assets.xcassets */,
 				7414838C21854689004296AE /* LaunchScreen.storyboard */,
 				7414838F21854689004296AE /* Info.plist */,
 			);
@@ -110,6 +162,67 @@
 				7414839A21854689004296AE /* Info.plist */,
 			);
 			path = MapNavigatorTests;
+			sourceTree = "<group>";
+		};
+		744F53E321854E71006DB829 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				744F53E421854E86006DB829 /* MainCoordinator.swift */,
+				744F53E821855457006DB829 /* RootController.swift */,
+				744F53F62186815E006DB829 /* Services.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		744F53EB2185553B006DB829 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				744F53EC2185559F006DB829 /* UIView+MapNavigator.swift */,
+				744F540421869AA0006DB829 /* String+MapNavigator.swift */,
+				691957A62187807900DED1D2 /* UITableView+MapNavigator.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		744F53F021856869006DB829 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				744F53E621854FD0006DB829 /* InitialScreenViewController.swift */,
+				744F53EE21855838006DB829 /* InitialScreenViewController.xib */,
+				6919579721876ABB00DED1D2 /* AtmListViewController.swift */,
+				6919579921876AC900DED1D2 /* AtmListViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		744F53F121856888006DB829 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				744F53FA218684E1006DB829 /* Atm.swift */,
+				744F53FC2186863E006DB829 /* Address.swift */,
+				744F53FE218688E4006DB829 /* OpeningHours.swift */,
+				744F540021868B93006DB829 /* Ratings.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		744F53F22185689A006DB829 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				744F540221868E6F006DB829 /* InitialScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		744F53F321867D4C006DB829 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				744F53F421867D6A006DB829 /* ATM_20181005_DEV.json */,
+				7414838A21854689004296AE /* Assets.xcassets */,
+				6919579B2187743A00DED1D2 /* Localizable.strings */,
+				6919579D2187749500DED1D2 /* Localizable.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E6CFD17A6E6B8010FCFF7D41 /* Frameworks */ = {
@@ -205,8 +318,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7414838E21854689004296AE /* LaunchScreen.storyboard in Resources */,
+				6919579C2187743A00DED1D2 /* Localizable.strings in Resources */,
+				691957A32187798200DED1D2 /* AtmListCell.xib in Resources */,
+				6919579A21876AC900DED1D2 /* AtmListViewController.xib in Resources */,
+				744F53F521867D6A006DB829 /* ATM_20181005_DEV.json in Resources */,
+				744F53EF21855838006DB829 /* InitialScreenViewController.xib in Resources */,
 				7414838B21854689004296AE /* Assets.xcassets in Resources */,
-				7414838921854687004296AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +395,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7414838621854687004296AE /* ViewController.swift in Sources */,
+				744F53FD2186863E006DB829 /* Address.swift in Sources */,
+				744F53E921855457006DB829 /* RootController.swift in Sources */,
+				744F53F72186815E006DB829 /* Services.swift in Sources */,
+				691957A12187797700DED1D2 /* AtmListCell.swift in Sources */,
+				744F53ED2185559F006DB829 /* UIView+MapNavigator.swift in Sources */,
+				744F540521869AA0006DB829 /* String+MapNavigator.swift in Sources */,
+				744F53E521854E86006DB829 /* MainCoordinator.swift in Sources */,
 				7414838421854687004296AE /* AppDelegate.swift in Sources */,
+				744F540121868B93006DB829 /* Ratings.swift in Sources */,
+				6919579E2187749500DED1D2 /* Localizable.swift in Sources */,
+				744F53E721854FD0006DB829 /* InitialScreenViewController.swift in Sources */,
+				6919579821876ABB00DED1D2 /* AtmListViewController.swift in Sources */,
+				744F53FB218684E1006DB829 /* Atm.swift in Sources */,
+				744F540321868E6F006DB829 /* InitialScreenViewModel.swift in Sources */,
+				744F53FF218688E4006DB829 /* OpeningHours.swift in Sources */,
+				691957A521877CAA00DED1D2 /* AtmListCellViewModel.swift in Sources */,
+				691957A72187807900DED1D2 /* UITableView+MapNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7414838721854687004296AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7414838821854687004296AE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7414838C21854689004296AE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -445,7 +569,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -461,7 +588,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigator/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -477,7 +607,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -494,7 +628,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = BWR284E7E7;
 				INFOPLIST_FILE = MapNavigatorTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = claudiosobrinho.MapNavigatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
